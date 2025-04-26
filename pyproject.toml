@@ -1,0 +1,50 @@
+[project]
+name = "qtapp"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "qt-py>=1.4.4",
+    "requests>=2.32.3",
+]
+
+[optional-dependencies.dev]
+gui = [
+    "pyside6>=6.9.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.7",
+    "pyside6>=6.9.0",
+]
+
+
+[tool.ruff]
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    # ANN101: Missing type annotation for `self` in method
+    "ANN101",
+    # ANN102: Missing type annotation for `cls` in classmethod
+    "ANN102",
+    # D100: Missing docstring in public modul
+    "D100",
+    # D107: Missing docstring in `__init__`
+    "D107",
+    # D104: Missing docstring in public package
+    "D104",
+    # D105: Missing docstring in magic method
+    "D105",
+    # N802: Function name should be lowercase
+    "N802",
+    # N815: Variable in class scope should not be mixedCase
+    "N815",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
