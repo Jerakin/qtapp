@@ -1,0 +1,67 @@
+QMainWindow {
+    background-color: #3b3f42;
+    color: white;
+    border: none;
+}
+
+QHeaderView::section {
+    background-color: #3b3f42;
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+    width: 6px;
+    height: 8px;
+}
+
+
+
+QTableView {
+    border: none;
+    background-color: #2b2b2b;
+    selection-background-color: #3b3f42;
+}
+
+
+QTableView::item:selected {
+    border: none;
+}
+
+QToolBar::handle:horizontal {
+    image: url(images:dots-vertical.svg);
+    width: 15px;
+}
+
+QToolBar::handle:vertical {
+    image: url(images:dots.svg);
+    height: 15px;
+}
+
+QScrollBar:vertical {
+    width: 4px;
+    background-color: #2b2b2b;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #b2bdaf;
+}
+
+QScrollBar:horizontal {
+    height: 2px;
+    background-color: #2b2b2b;
+}
+
+QScrollBar::handle:horizontal{
+    background-color: #b2bdaf;
+}
+
+*[color="primary"] { color: #0d6efd; }
+*[bg-color="primary"] { background-color: #0d6efd; }
+
+*[color="secondary"] { color: #6c757d }
+*[bg-color="secondary"] { background-color: #6c757d }
+
+*[color="success"] { color: #198754 }
+*[bg-color="success"] { background-color: #198754 }
+
+*[color="danger"] { color: #dc3545 }
+*[bg-color="danger"] { background-color: #dc3545 }
