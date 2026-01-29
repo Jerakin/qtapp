@@ -18,5 +18,5 @@ the window the grid is resized automatically to fit it.
 In this example we add a dockable to the app which displays additional information about
 the selected item.
 
-## [qtapp example themes and icons](/src/qtapp_example_themes_and_icons/README.md)
+## [qtapp_example_themes_and_icons](/src/qtapp_example_themes_and_icons/README.md)
 We dynamically load icons and images and use a QSS to style our app.
