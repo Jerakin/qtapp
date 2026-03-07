@@ -1,0 +1,8 @@
+[Icon Theme]
+Name=light
+Directories=icons
+
+[icons]
+Size=36
+Context=Actions
+Type=Fixed
